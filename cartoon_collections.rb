@@ -13,9 +13,13 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(calls)
-  calls.length < 4
+  
+  string_calls = calls.join(" ").length  
+    if string_calls < 4
+      puts false
+  
   range = calls.length > 4
-  calls.include?(range)
+  string_calls.include?(range)
   end 
 end
 
